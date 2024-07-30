@@ -1,4 +1,3 @@
-# Dictionaries containing course information
 room_numbers = {
     "CSC101": "3004",
     "CSC102": "4501",
@@ -6,7 +5,6 @@ room_numbers = {
     "NET110": "1244",
     "COM241": "1411"
 }
-
 instructors = {
     "CSC101": "Haynes",
     "CSC102": "Alvarado",
@@ -14,7 +12,6 @@ instructors = {
     "NET110": "Burke",
     "COM241": "Lee"
 }
-
 meeting_times = {
     "CSC101": "8:00 a.m.",
     "CSC102": "9:00 a.m.",
@@ -22,8 +19,6 @@ meeting_times = {
     "NET110": "11:00 a.m.",
     "COM241": "1:00 p.m."
 }
-
-# Function to display course information
 def display_course_info(course_number):
     if course_number in room_numbers:
         print(f"Course Number: {course_number}")
@@ -32,12 +27,8 @@ def display_course_info(course_number):
         print(f"Meeting Time: {meeting_times[course_number]}")
     else:
         print("Invalid course number. Please try again.")
-
-# Main program
 def main():
-    # Ask user to enter a course number
     course_number = input("Enter a course number (e.g., CSC101): ").strip()
     display_course_info(course_number)
-
 if __name__ == "__main__":
     main()
